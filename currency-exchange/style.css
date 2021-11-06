@@ -1,0 +1,96 @@
+:root {
+    --font-family: 'Segoe UI', sans-serif;
+    --bg-color: #f2f2f2;
+    --primary: #007bff;
+    --primary-dark: #0056b3;
+    --text-dark: #444;
+    --accent: #9c7ac9;
+    --border-color: #ccc;
+    --focus-border: #444;
+    --result-bg: #f0f9ff;
+    --result-text: #0b5394;
+    --result-border: #cce5ff;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.converter-box {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.currency-img {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    color: var(--text-dark);
+}
+
+select,
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: border 0.2s ease;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: var(--focus-border);
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+.result-box {
+    margin-top: 1.2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    background-color: var(--result-bg);
+    color: var(--result-text);
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid var(--result-border);
+}
